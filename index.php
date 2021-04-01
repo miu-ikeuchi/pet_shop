@@ -8,7 +8,7 @@ $sql = 'SELECT * FROM animals';
 
 $stmt = $dbh->prepare($sql);
 
-$stmt->execute();
+
 
 $animals = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
