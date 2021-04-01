@@ -29,7 +29,7 @@ $animals = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <ul>
         <?php foreach ($animals as $animal) : ?>
             <li>
-                <?= h($animal['type']) . 'の' . h($animal['classification']) . 'ちゃん' .
+                <?= h($animals['type']) . 'の' . h($animal['classification']) . 'ちゃん' .
                     '<br>' . h($animal['description']) . '<br>' . h($animal['birthday']) . ' 生まれ' .
                     '<br>' . '出身地 ' . h($animal['birthplace']) . '<hr>' ?>
             </li>
